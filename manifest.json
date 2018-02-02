@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Uda Student Helper",
+    "description": "Adds functionality to SinhVienDongA.Edu.Vn website",
+    "version": "1.0",
+    "page_action": {
+        "default_icon": "icon.png",
+        "default_title": "Uda Student Helper",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+	"content_scripts":[
+		{
+			"matches":["http://sinhvien.donga.edu.vn/sinh-vien/ket-qua-hoc-tap"],
+            "js":["uda.js",
+                "jquery-3.3.1.min.js", 
+                "jquery.sticky.js", 
+                "jquery.dataTables.min.js",
+                "dataTables.bootstrap.min.js"],
+			"css":["uda.css", "dataTables.bootstrap.min.css","animate.css"]
+		}
+	],
+
+	"permissions":[
+		"tabs",
+		"http://sinhvien.donga.edu.vn/*"
+	]
+}

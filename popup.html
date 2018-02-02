@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thâm Davies">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uda Student Helper</title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/material-kit.css?v=2.0.0">
+    <link rel="stylesheet" href="popup.css" />
+
+</head>
+
+<body class="scroll beauty-scroll">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <img src="Robot-icon.png" alt="">
+                    <p>
+                        <strong>Trợ lý thông minh</strong>
+                    </p>
+                </div>
+                <hr/>
+                <div class="card card-nav-tabs">
+                    <div class="card-header card-header-primary">
+                        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#statistic" data-toggle="tab">
+                                            <i class="fa fa-bar-chart"></i> Thống kê
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact" data-toggle="tab">
+                                            <i class="fa fa-comments-o"></i> Góp ý
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#settings" data-toggle="tab">
+                                            <i class="fa fa-cogs"></i> Cài đặt
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content text-center">
+                            <div class="tab-pane active" id="statistic">
+                                <form method="post" id="contactForm">
+                                    <div class="form-check text-left">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" id="smartTable" name="smartTable" type="checkbox" value=""> Bảng điểm thông minh
+                                            <span class="form-check-sign">
+                                                <span class="check"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check text-left disabled">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" name="mark" type="checkbox" value="" disabled> Thông kê điểm (Comming Soon)
+                                            <span class="form-check-sign">
+                                                <span class="check"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <button style="margin-top: 20px;" 
+                                            class="btn btn-primary btn-block" 
+                                            type="submit">Thực thi</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="contact">
+                                <form>
+                                    <div class="form-group bmd-form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">group</i>
+                                            </span>
+                                            <input type="text" required class="form-control" placeholder="Họ tên">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group bmd-form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">email</i>
+                                            </span>
+                                            <input type="email" required class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group bmd-form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">textsms</i>
+                                            </span>
+                                            <textarea class="form-control" required placeholder="Nội dung góp ý" id="" cols="30" rows="6"></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-block" type="submit">
+                                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i> &nbsp; Gửi</button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane" id="settings">
+                                <p class="text-warning">
+                                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                    Tất cả bảng thống kê sẽ bị xóa, bạn hãy cân nhắc trược khi thực hiện!</p>
+                                <button style="margin-top: 20px;" class="btn btn-primary btn-block" id="reset" type="submit">Reset</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <span>Bản quyền thuộc về
+                    <a target="_blank" href="http://fb.com/thamdavies.dev">Thâm Davies</a>.</span>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="./assets/js/core/popper.min.js"></script>
+        <script src="./assets/js/bootstrap-material-design.js"></script>
+        <script src="popup.js"></script>
+</body>
+
+</html>
