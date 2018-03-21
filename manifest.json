@@ -15,11 +15,11 @@
 	"content_scripts":[
 		{
 			"matches":["http://sinhvien.donga.edu.vn/sinh-vien/ket-qua-hoc-tap"],
-            "js":["uda.js",
-                "jquery-3.3.1.min.js", 
+            "js":["jquery-3.3.1.min.js", 
                 "jquery.sticky.js", 
                 "jquery.dataTables.min.js",
-                "dataTables.bootstrap.min.js"],
+                "dataTables.bootstrap.min.js",
+                "uda.js"],
 			"css":["uda.css", "dataTables.bootstrap.min.css","animate.css"]
 		}
 	],
